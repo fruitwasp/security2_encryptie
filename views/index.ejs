@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Encrypt-R-us - Security 2</title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ'
+        crossorigin='anonymous'>
+</head>
+
+<body>
+    <div class='container'>
+        <h1>Encrypt-R-us</h1>
+
+        <form method='post' action='/'>
+            <div class='form-group'>
+                <label for='userName'>Gebruikersnaam</label>
+                <input id='userName' class='form-control' type='text' name='userName' <% if (userName) { %> value="<%= userName %>" <% } %> />
+            </div>
+
+            <div class='form-group'>
+                <label for='password'>Wachtwoord</label>
+                <input id='password' class='form-control' type='text' name='password' <% if (password) { %> value="<%= password %>" <% } %> />
+            </div>
+
+            <div class='form-group'>
+                <label for='decrypted'>Bericht</label>
+                <textarea id='decrypted' class='form-control' name='decrypted'><% if (decrypted) { %><%= decrypted %><% } %></textarea>
+            </div>
+
+            <div class='form-group'>
+                <label for='encrypted'>Versleuteld bericht</label>
+                <input id='encrypted' class='form-control' type='text' name='encrypted' <% if (encrypted) { %> value="<%= encrypted %>" <% } %> />
+            </div>
+
+            <button type='submit' class='btn btn-primary'>Verstuur</button>
+        </form>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-3.1.1.slim.min.js' integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n'
+        crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js' integrity='sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb'
+        crossorigin='anonymous'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js' integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn'
+        crossorigin='anonymous'></script>
+</body>
+
+</html>

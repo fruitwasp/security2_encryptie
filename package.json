@@ -1,0 +1,26 @@
+{
+  "name": "security2_encryptie",
+  "version": "1.0.0",
+  "description": "minimal encryption test for the course Security 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fruitwasp/security2_encryptie.git"
+  },
+  "author": "Kevin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fruitwasp/security2_encryptie/issues"
+  },
+  "homepage": "https://github.com/fruitwasp/security2_encryptie#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "crypto": "^0.0.3",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3"
+  }
+}
